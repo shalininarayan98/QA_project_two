@@ -6,7 +6,7 @@ app=Flask(__name__)
 def get_test():
     return {"name": "Bob"}
 
-@app.route('/post.test', methods=['POST'])
+@app.route('/post_test', methods=['GET','POST'])
 def post_test():
     print(request.json)
     return "ok"
